@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    LIST SEDERHANA
+  
+    <div class = "list">
+    <input type="text" id="teks" placeholder="ADD"/>
+    <input id="button" type = "button" value="ENTER"/>
+     
+    </div>
+
+  <div id="content">
+    <ul id ="list"></ul>
+  </div>
+  <script>
+    const teks = document.getElementById("teks");
+    const button = document.getElementById("button");
+    const list = document.getElementById("list");   
+
+    button.addEventListener("click",function() {
+        const teksv = teks.value
+        if(teksv !=="") {
+            const li =document.createElement("li");
+            li.textContent = teksv;
+            list.appendChild(li);
+            teks.value = "";
+ 
+        } else {
+            alert("tidak boleh kosong");
+        }
+    })
+  </script>
+</body>80....=zz
+</html>                                         

@@ -1,0 +1,88 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  color: #333;
+}
+
+/* Judul */
+body > h1, body > div:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Container input */
+.list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.list input[type="text"] {
+  padding: 12px;
+  width: 220px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.list input[type="text"]:focus {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Tombol */
+#button {
+  padding: 12px 20px;
+  background: #4e54c8;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+#button:hover {
+  background: #3c40a4;
+  transform: translateY(-2px);
+}
+
+/* List output */
+#content {
+  width: 300px;
+}
+
+#list {
+  list-style: none;
+}
+
+#list li {
+  background: #fff;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+#list li:hover {
+  transform: scale(1.02);
+}
