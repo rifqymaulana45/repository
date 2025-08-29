@@ -86,3 +86,33 @@ body > h1, body > div:first-of-type {
 #list li:hover {
   transform: scale(1.02);
 }
+/* Style untuk tombol Edit */
+button.edit {
+  margin-left: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style untuk tombol Delete */
+button.delete {
+  margin-left: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover efek */
+button.edit:hover {
+  background-color: darkorange;
+}
+
+button.delete:hover {
+  background-color: darkred;
+}

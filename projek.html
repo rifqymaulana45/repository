@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    LIST SEDERHANA
+   LIST SEDERHANA
   
     <div class = "list">
     <input type="text" id="teks" placeholder="ADD"/>
@@ -23,11 +23,32 @@
     const button = document.getElementById("button");
     const list = document.getElementById("list");   
 
+   // Menambahkan event listener pada tombol simpan
     button.addEventListener("click",function() {
         const teksv = teks.value
         if(teksv !=="") {
             const li =document.createElement("li");
             li.textContent = teksv;
+        
+const editBtn = document.createElement("button");
+editBtn.textContent = "Edit";
+editBtn.className = "edit";
+editBtn.addEventListener("click", function () {
+    const newText = prompt("Edit teks:", li.firstChild.textContent);
+    if (newText !== null && newText.trim() !== "") {
+        li.firstChild.textContent = newText;
+    }
+});
+li.appendChild(editBtn);
+
+
+const deleteBtn = document.createElement("button");
+deleteBtn.textContent = "Delete";
+deleteBtn.className ="delete";
+deleteBtn.addEventListener("click", function () {
+    li.remove();
+});
+li.appendChild(deleteBtn);
             list.appendChild(li);
             teks.value = "";
  
@@ -35,6 +56,8 @@
             alert("tidak boleh kosong");
         }
     })
+
+    
   </script>
-</body>80....=zz
-</html>                                         
+</body>
+</html>
